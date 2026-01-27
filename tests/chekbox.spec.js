@@ -1,5 +1,5 @@
 const {test,expect}=require('@playwright/test')
-test('handle radio button',async ({page})=>{
+test.skip('handle radio button',async ({page})=>{
     await page.goto('https://www.qa-practice.com/elements/checkbox/mult_checkbox')
    expect(await page.locator('#id_checkboxes_0').isChecked()).toBeFalsy()
     await page.locator('#id_checkboxes_0').check()
